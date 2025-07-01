@@ -33,7 +33,7 @@ resource "aws_ecs_task_definition" "task_def" {
 }
 
 resource "aws_cloudwatch_log_group" "ecs_logs" {
-  name = "/ecs/${var.app_name}"
+  name = "/ecs/${var.app_name}-logs"
 
   tags = {
     Application = "shared-app"

@@ -5,7 +5,7 @@ module "ecs_task_execution_role" {
   create_role = true
   role_requires_mfa = false
 
-  role_name = "${var.app_name}-ecs-task-execution-role"
+  role_name = "${var.app_name}-ecs-task-execution-role-2"
   trusted_role_services = [
     "ecs-tasks.amazonaws.com"
   ]
@@ -21,7 +21,7 @@ module "ecs_task_role" {
 
   create_role = true
   role_requires_mfa = false
-  role_name = "${var.app_name}-ecs-task-role"
+  role_name = "${var.app_name}-ecs-task-role-2"
   trusted_role_services = [
     "ecs-tasks.amazonaws.com"
   ]
@@ -37,7 +37,7 @@ module "ecs_infrastructure_role" {
 
   create_role = true
   role_requires_mfa = false
-  role_name = "${var.app_name}-ecs-infrastructure-role"
+  role_name = "${var.app_name}-ecs-infrastructure-role-2"
   trusted_role_services = [
     "ecs.amazonaws.com"
   ]

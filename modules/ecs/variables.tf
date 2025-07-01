@@ -19,7 +19,8 @@ variable "desired_count" {
   default = 1
 }
 
-variable "vpc_lattice_target_group_arn" {
-  description = "VPC Lattice target group arn"
-  type = string
+variable "vpc_lattice_configurations" {
+  description = "VPC Lattice configurations"
+  type = map(string)
+  default = {}
 }
